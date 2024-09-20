@@ -1,0 +1,33 @@
+{
+  "name": "%APPSLUG%",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "start": "vite --port 3000",
+    "build": "tsc && vite build --sourcemap",
+    "copy": "mkdir -p ../pkg/ui && rm -rf ../pkg/ui/* && cp -r dist/* ../pkg/ui/",
+    "build:copy": "npm run build && npm run copy",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@dartfrog/puddle": "github:bacwyls/puddle",
+    "@kinode/client-api": "^0.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.26.2",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.0.0",
+    "vite": "^5.4.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

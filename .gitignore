@@ -1,0 +1,6 @@
+/node_modules
+
+/testapp
+
+.DS_Store
+**/.DS_Store
