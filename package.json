@@ -1,6 +1,6 @@
 {
   "name": "@dartfrog/create-dartfrog-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "create a dartfrog kinode app",
   "main": "node install.js",
   "bin": "install.js",
