@@ -7,9 +7,12 @@
   "scripts": {
     "start": "node install.js"
   },
-  "author": "",
+  "author": "bacwyls",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bacwyls/create-dartfrog-app.git"
+  },
   "dependencies": {
     "mvdir": "^1.0.21",
     "prompts": "^2.4.2",
