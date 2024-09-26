@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import useClickerStore from '../store/store';
+import useAppStore from '../store/store';
 import { useServiceStore } from '@dartfrog/puddle';
 
-const ClickerPluginBox: React.FC = () => {
-  const { clickMap, sendClick } = useClickerStore();
+const PluginBox: React.FC = () => {
+  const { clickMap, sendClick } = useAppStore();
   const { api, serviceId } = useServiceStore();
   const [sortedClicks, setSortedClicks] = useState<Array<{ id: string, count: number }>>([]);
 
@@ -47,4 +47,4 @@ const ClickerPluginBox: React.FC = () => {
   );
 };
 
-export default ClickerPluginBox;
+export default PluginBox;

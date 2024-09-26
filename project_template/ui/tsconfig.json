@@ -11,7 +11,8 @@
     // "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false,
+    "noEmit": true,
+    "outDir": "./dist",
     "declaration": true,
     "jsx": "react-jsx",
 
@@ -21,7 +22,8 @@
     // "strict": true,
     // "noUnusedLocals": true,
     // "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["vite/client"]
   },
   "include": [
     "src",
